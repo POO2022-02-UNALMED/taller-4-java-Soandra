@@ -1,7 +1,8 @@
 package classroom;
 
-public class Taller4 {
+import java.lang.reflect.Type;
 
+public class Taller4 {
     public static void main(String[] args) {
         Persona[] estudiantes1 = new Persona[3];
         estudiantes1[0] = new Persona(188220);
@@ -12,7 +13,7 @@ public class Taller4 {
         Grupo grupo1 = new Grupo(estudiantes1, profesor1, asignatura1, 10023, "M J 2-4");
 
         Persona profesor2 = new Persona(99212, "Andrea");
-        Asignatura asignatura2 = new Asignatura(882,Tipo.DISCIPLINAR);
+        Asignatura asignatura2 = new Asignatura(882, Tipo.DISCIPLINAR);
         asignatura2.setCodigoInterno(98);
         asignatura2.cambiarDatos("Estadistica");
         Grupo grupo2 = new Grupo(2, profesor2, asignatura2, 10122, "W V 8-10");
